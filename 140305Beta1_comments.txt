@@ -1,0 +1,27 @@
+
+Does it take more material to stop electrons than gammas? Discuss this more explicitly.
+
+What is the reason you expect the energies are shifted toward lower energies? Compare with what you would expect for photons.  
+
+Page 4
+
+Your procedure 1 - 7 should not be put under “Experimental Setup” but rather “Method” or some other suitable section. In this same section you should emphasise what you’re trying to measure: k and B from the R(E) formula. 
+
+
+Figures 5 and 6. The legend does not say what the numbers 1,2,3,4,5,6 represent. In Figure 5 or 6, explain the features of your spectrum in terms of the physics involved: the beta continuums, the sharp peak in the beginning, the internal conversion peak.
+
+
+Page 7
+
+Figures 7 and 8. The legend should specify which color corresponds to which absorber. What is the black line? It's not in the legend. Also, change the color of the data points to their corresponding absorber. Finally, include more values on the y-axis so that it’s easier to read off.
+
+You must include errors on your estimated parameters k and B. They should come from your fit where you include errors on R and E. If you did a linear fit with uncertainties in R and E as weights (i.e. a chi-square fit) you should have gotten both the best-fit values and the uncertainties back from this fit. If you don’t succeed with chi-square, use error propagation or some other method to make sure you get an estimate on the uncertainty of the parameters. 
+
+
+General
+
+The report contains typos and many sentences are gramatically incorrect. Although I am still able to understand what you have written it is a genral policy at KTH that the language must be of a high standard. Please improve.
+
+Please include the spectrum of Sr and discuss its shape (if you did not take the spectrum just describe it with words). Also mention any changes (and discuss why) that you may have made to the settings on the electronics. How is this relevant for the calibration?
+
+I am not sure if we discussed this during the lab, but another difficulty of the measuremnt is that the electrons scatter multiple times in the absorber and thus have different path lengths which results in a broadening of the Gaussian peak. This is also mentioned in Katz and Penfold.

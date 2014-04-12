@@ -1,0 +1,49 @@
+%!TEX root = /Users/kevin/SkyDrive/KTH Work/LaTeX Reports/Atomic Nucleus/Atomic Nucleus.tex
+\section{Discussion/Conclusion}
+
+% (fold)
+\label{sec:discussion_conclusion} The relative intensities between each plot of Figure~\ref{fig:Figures_aluminumShiftsPlot} do not give as much insight as those in Figure~\ref{fig:Figures_plasticShiftsPlot} because the counts collected were not set beforehand. We realized the necessity of this criteria and set it for all the collected data with plastic. The data we collected agrees within our calculated error of uncertainty for higher energies, but for lower energies, our model gets progressively worse. Although, Figure~\ref{fig:Figures_R_E_Error_ComparisonFull} is on a logarithmic scale, so the seemingly increasing deviation from the accepted values at lower energies would occur even if the error was constant throughout all measurements. 
+
+We do expect to have a larger deviation at lower energies because we assumed a linear model to simplify calculations. It is also evident from both sources that the relationship isn't exactly linear, but roughly follows this semi-empirical equation from Katz and Penfold,\cite{RevModPhys.24.28} 
+\begin{equation}
+	R(E) = 412 E^{1.265 - 0.0954 \ln(E)} \label{eq:acceptedEq} 
+\end{equation}
+
+%(eq:acceptedEq)
+Comparing this to our approximation, $R(E) = 453.4 E$ for aluminum and $458.8 E$ for plastic, we are satisfied with the results as the main source of error was our linear approximation. To calculate the errors, we used the equation,\cite{093570275X} $\delta R(E) = |k| \delta E$ and we know $\delta E$ from Table~\ref{tab:dataCollected}. Note that in this experiment, we assume that the uncertainty in the thickness of aluminum and plastic is negligible.
+
+In both Equation~\eqref{eq:acceptedEq} and our approximation, $R(E)$ is in units of $[\frac{\text{mg}}{\text{cm}^2}]$ and E is in $[\text{MeV}]$. The uncertainty of our data is shown in Table~\ref{tab:uncertaintyConversion}. Berger states the uncertainty in measurements increases for lower energies, 
+\begin{equation}
+	\frac{\delta R(E)}{R(E)} = 
+	\begin{cases}
+		& 5 \text{~to~} 10~\% \text{ if } 10~\text{keV}<E<100~\text{keV} \\
+		& 1 \text{~to~} 2~\% \text{ if } E>100~\text{keV} 
+	\end{cases}
+\end{equation}
+for the reason that at lower energies the electron energy is not large compared to the atomic electrons and therefore, the model, lacking any electron shell corrections, becomes less accurate. Berger also states that materials of low atomic number like air or plastic, will have a higher uncertainty $\sim 10\%$. In both of our models, we estimated about 1\% uncertainty, which likely means that we did not estimate our errors properly.
+\begin{table}
+	\begin{center}
+		\begin{tabular}
+			{llll} \toprule \multicolumn{2}{c}{Aluminum} & \multicolumn{2}{c}{Plastic}\\
+			\cmidrule(r){1-2} 
+			\cmidrule(r){3-4} 
+			$\delta R(E)$ [$\frac{\text{mg}}{\text{cm}^2}$] & $\delta E$ [MeV] & $\delta R(E)$ [$\frac{\text{mg}}{\text{cm}^2}$] & $\delta E$ [MeV]\\
+			\midrule 
+			1.3764 & 0.003 	& 1.359 	& 0.003 \\
+			2.9822 & 0.004 	& 2.9445 	& 0.0065\\
+			2.5234 & 0.0015 & 2.4915 	& 0.0055\\
+			2.9822 & 0.0075 & 2.9445 	& 0.0065\\
+			4.1292 & 0.0015 & 4.077 	& 0.009\\
+			2.0646 & 0.0085 & 2.0385 	& 0.0045\\
+			5.9644 & 0.0105 & 5.889 	& 0.013\\
+			\bottomrule 
+		\end{tabular}
+	\end{center}
+	\caption{The uncertainties in the range is calculated from our uncertainties in energy peaks using equation,\cite{093570275X} $\delta R(E) = |k| \delta E$. This equates to about 1\% uncertainty.} \label{tab:uncertaintyConversion} 
+\end{table}
+
+%(tab:uncertaintyConversion)
+If we assume that our uncertainty in both E and R(E) also increase for lower energies, then our results almost agree within margins of error with the accepted model for all values of R(E) and E.  We believe that the fact that the equation for R(E) is independent of material shows us that our measurements for both materials were consistent with each other because they are within our estimated margins of error.  This lead us to believe that we would need a better approximation if we would want to improve our model to compare with other standards.  We also believe that our uncertainty was too low and it should on the same scale as other sources, 5\% to 10\%.
+
+% The linear approximation was done because as more sheets of an absorber are added, the peaks become less distinguishable, meaning higher uncertainty in our measurements. 
+% section discussion_conclusion (end)
