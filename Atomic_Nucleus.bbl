@@ -50,13 +50,13 @@ M.~Berger. (2014, March) Estar, pstar, and astar: Computer programs for
   \url{http://physics.nist.gov/Star}
 \BIBentrySTDinterwordspacing
 
+\bibitem{garcia2000numerical}
+A.~Garcia, \emph{Numerical methods for physics}.\hskip 1em plus 0.5em minus
+  0.4em\relax Prentice Hall, 2000.
+
 \bibitem{093570275X}
 J.~R. Taylor, \emph{An Introduction to Error Analysis: The Study of
   Uncertainties in Physical Measurements}, 2nd~ed.\hskip 1em plus 0.5em minus
   0.4em\relax University Science Books, 1996.
-
-\bibitem{garcia2000numerical}
-A.~Garcia, \emph{Numerical methods for physics}.\hskip 1em plus 0.5em minus
-  0.4em\relax Prentice Hall, 2000.
 
 \end{thebibliography}

@@ -1,4 +1,6 @@
-%!TEX root = /Users/kevin/SkyDrive/KTH Work/LaTeX Reports/Atomic Nucleus Revised/Atomic Nucleus.tex
+%!TEX root = /Users/kevin/SkyDrive/KTH Work/LaTeX Reports/Atomic Nucleus Revised/Atomic_Nucleus.tex
+
+
 \section{Results} % (fold)
 \label{sec:results}
 The peaks of each measurement was recorded in Table~\ref{tab:dataCollected} and Figure~\ref{fig:Figures_aluminumShiftsPlot} and \ref{fig:Figures_plasticShiftsPlot} show the energy distributions from both absorbers while collecting data from $^{137}\text{Cs}$.
@@ -37,7 +39,18 @@ n    & ($\text{peak}\pm\sigma$)~[keV] 	& Thickness (cm) & ($\text{peak}\pm\sigma
 	\end{center}
 	\caption{Data collected shows our estimated peaks with standard deviations from taking the average of two possible peaks, one low energy and one high energy.} \label{tab:dataCollected}
 \end{table}%(tab:dataCollected)
-The electron range, $R(E)$, is interpolated using a linear fit of thickness as a function of energy with the weights $1/\sigma^2$ from Table~\ref{tab:dataCollected}. Fitting to the equation $R(E)=kE^B$, we get $k=453.4$ and $B=1$ for aluminum and $k=458.4$ and $B=1$ for plastic. $R(E)$ has units of mg/cm$^2$, making the values independent of the absorbing material. Figure~\ref{fig:Figures_R_E_Error_ComparisonFull} and \ref{fig:Figures_R_E_Error_ComparisonFullZoomIn} shows our results compared to two other credible sources\cite{RevModPhys.24.28,nistData}, each with uncertainties around 5\%.  
+The electron range, $R(E)$, is interpolated using a linear fit of thickness as a function of energy with the weights $1/\sigma^2$ from Table~\ref{tab:dataCollected}. We fit the function to the equation $R(E)=kE^B$, using a least squares fit.  We used a change of variables to transform our equation into a linear problem,
+\begin{align*}
+	y = m x + c \\
+\ln(R(E)) = y \\
+\ln(E) = x \\
+\ln(k) = c \\
+B = m \\
+\end{align*}
+
+ Our chi-squared value is $1.7e-4$ and $\text{N}-2$ is 5.  For a good fit, we want $\chi^2\approx \text{N}-2$.  If $\chi^2 \gg \text{N}-2$, it suggests that we are either using the wrong function or our error bars are too small.  If $\chi^2 \ll \text{N}-2$, it suggests that the data fits so well that maybe our error bars are too large.\cite{garcia2000numerical}  We believe the function fit to our data sufficiently describes the range in this domain, but not outside of it.  The values for $k$ and $B$ of aluminium are obtained are: $k = 453.4 \pm 3.5$ and $B = 1.00 \pm 2.26$.  The values for $k$ and $B$ of plastic are: $k = 458.4 \pm 3.56$ and $B = 0.96 \pm 2.31$.  These error bars are significantly too large, which also agrees with analysis of the chi-squared value.
+
+ $R(E)$ has units of mg/cm$^2$, making the values independent of the absorbing material. Figure~\ref{fig:Figures_R_E_Error_ComparisonFull} and \ref{fig:Figures_R_E_Error_ComparisonFullZoomIn} shows our results compared to two other credible sources\cite{RevModPhys.24.28,nistData}, each with uncertainties around 5\%.  
 
 \begin{comment}
 	\begin{figure}[tbp]
@@ -49,8 +62,8 @@ The electron range, $R(E)$, is interpolated using a linear fit of thickness as a
 \end{comment}
 \begin{figure}[tbp]
 	\centering
-		\includegraphics[width=.8\textwidth]{Figures/R_E_Error_ComparisonFull.eps}
-	\caption{The data we collected agrees with those collected from different sources at higher energies and gets less accurate at lower energies.  The black line is data collected from NIST.}
+		\includegraphics[width=\textwidth]{Figures/R_E_Error_ComparisonFull.eps}
+	\caption{The data we collected agrees with those collected from different sources at higher energies and gets less accurate at lower energies.  The black line is data collected from NIST and the red and purple are from our calculations with plastic and aluminium.}
 	\label{fig:Figures_R_E_Error_ComparisonFull}
 \end{figure}%(fig:Figures_R_E_Error_ComparisonFull)
 \begin{figure}[tbp]
