@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex Atomic_Nucleus"] 1397405970 "Atomic_Nucleus.aux" "Atomic_Nucleus.bbl" "Atomic_Nucleus" 1399642012
+["bibtex Atomic_Nucleus"] 1399660371 "Atomic_Nucleus.aux" "Atomic_Nucleus.bbl" "Atomic_Nucleus" 1399660563
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1222816716 59506 016987d9be15acf51cdd7252d40ecec2 ""
-  "Atomic_Nucleus.aux" 1399642012 7850 022234a61942bfe878fb37276d21f662 ""
+  "Atomic_Nucleus.aux" 1399660563 8136 029a2c1a48522a5b7a8cc226da12a520 ""
   "Atomic_Nucleus.bcf" 0 -1 0 ""
   "Atomic_Nucleus.bib" 1397331037 3660 11b176a2cde9abce210946f238bc31c2 ""
   (generated)
   "Atomic_Nucleus.bbl"
   "Atomic_Nucleus.blg"
-["pdflatex"] 1399642011 "Atomic_Nucleus.tex" "Atomic_Nucleus.pdf" "Atomic_Nucleus" 1399642012
+["pdflatex"] 1399660562 "Atomic_Nucleus.tex" "Atomic_Nucleus.pdf" "Atomic_Nucleus" 1399660563
   "/usr/local/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -84,11 +84,11 @@
   "/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1369923225 1072746 3ce1f23f203cb4a0015ca3c8411dee4a ""
   "/usr/local/texlive/2013/texmf-var/web2c/pdftex/pdflatex.fmt" 1369923264 3827029 ad4432546849f432c3154779662c76c8 ""
   "/usr/local/texlive/2013/texmf.cnf" 1369923207 577 cbc827f6294276973a1952e86e8ad73a ""
-  "Atomic_Nucleus.aux" 1399642012 7850 022234a61942bfe878fb37276d21f662 ""
-  "Atomic_Nucleus.bbl" 1397405971 2417 2dd849a6e5641d69688e3a6a0749a137 "bibtex Atomic_Nucleus"
-  "Atomic_Nucleus.out" 1399642012 760 08ecae27ba7c060bcdd6275e9d4efea9 ""
-  "Atomic_Nucleus.tex" 1397332794 2120 7fbeae262869953518a01adbfa9640cf ""
-  "Atomic_Nucleus.toc" 1399642012 416 9f6de5ebee07ed9d5a5950810106f1fa ""
+  "Atomic_Nucleus.aux" 1399660563 8136 029a2c1a48522a5b7a8cc226da12a520 ""
+  "Atomic_Nucleus.bbl" 1399660372 2417 2dd849a6e5641d69688e3a6a0749a137 "bibtex Atomic_Nucleus"
+  "Atomic_Nucleus.out" 1399660563 760 b362cfa3c0541b356abe7ba7e8d6e54b ""
+  "Atomic_Nucleus.tex" 1399660445 2182 0b68a1dd16ff6dd0877ce9c469e3bb95 ""
+  "Atomic_Nucleus.toc" 1399660563 416 6f4dcaaad0997fa9c206ef2de11e778b ""
   "Figures/137CsDecayScheme.png" 1397319028 2904 f7b390593e37fb081d66df7d1a64c5e5 ""
   "Figures/90SrDecay.png" 1397319028 2240 c4edf4aa7adb49372f7e28ff4007a8ca ""
   "Figures/90YDecay.png" 1397319028 3378 c6bdc19b4ee2d1ef59269a247e28aa69 ""
@@ -96,6 +96,8 @@
   "Figures/R_E_Error_ComparisonFull.eps" 1397319028 181712 c1a531a5910b9a1d76a8be040a00de89 ""
   "Figures/R_E_Error_ComparisonFullZoomIn-eps-converted-to.pdf" 1397319028 13067 0ba2a7d80f0e55286a1456815f0879ce ""
   "Figures/R_E_Error_ComparisonFullZoomIn.eps" 1397319028 155903 f9a5640cf8b7a9eb6dbb0576b1062b50 ""
+  "Figures/alum_plas_NIST_plot-eps-converted-to.pdf" 1399660557 13625 fdbe55d9f1ffc3d3d821845f88caddc3 ""
+  "Figures/alum_plas_NIST_plot.eps" 1399660545 15591 acd3381c3d688920c35646af9f3f3b39 ""
   "Figures/aluminumShiftsPlot-eps-converted-to.pdf" 1397319028 113062 6e397c1496f66992f90717b89fcc25a0 ""
   "Figures/aluminumShiftsPlot.eps" 1397319028 452413 b2ced961970b20edf624acf011d0af54 ""
   "Figures/betabi210.pdf" 1397319028 17646 cf03f60b208b33d052a1ecf466ac5bfe ""
@@ -105,7 +107,7 @@
   "Sections/Experimental_Method.tex" 1399641910 1643 7866a4a525b7d58076f403680858c761 ""
   "Sections/Experimental_Setup.tex" 1399641910 1805 b8ff77cde7af7ab6fc0ae25ebd3121d1 ""
   "Sections/Introduction.tex" 1399641909 472 164bb0aa54b388e4c5f6b421faa46551 ""
-  "Sections/Results.tex" 1399641909 5365 3316f4474e467e1fcadb5bd3f19ed171 ""
+  "Sections/Results.tex" 1399660457 5638 ee546c99a7b47fd85d09554296885c05 ""
   "Sections/Theory.tex" 1399641908 4871 2faf28175856886078ea20965c930249 ""
   "Sections/title_page_1.tex" 1399641907 3736 7a7a4732418eada574c768b9957130f1 ""
   (generated)
