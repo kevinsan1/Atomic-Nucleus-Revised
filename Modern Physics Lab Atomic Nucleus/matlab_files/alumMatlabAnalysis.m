@@ -68,7 +68,7 @@ fprintf(' b = %g +/- %g \n',a_fit.two(1),sig_a.two(1));
 fprintf(' m = %g +/- %g \n',a_fit.two(2),sig_a.two(2));
 fprintf('ln(k)=b and B=m \n');
 fprintf(' R(E)=kE^B\n');
-fprintf(' R(E)=%g E^(%g)\n',10^(a_fit.two(1)),a_fit.two(2));
+fprintf('R(E)=%g E^(%g)\n',10^(a_fit.two(1)),a_fit.two(2));
 %% * Graph the data, with error bars, and fitting function.
 figure(2); clf;           % Bring figure 1 window forward
 plotOf.OurErrorBars = errorbar(10.^x.two,...
@@ -76,7 +76,7 @@ plotOf.OurErrorBars = errorbar(10.^x.two,...
 hold on;                  % Freeze the plot to add the fit
 plotOf.OurFit = plot(10.^x.two,10.^yy.two,'-');
 % Plot the fit on same graph as data
-xlabel('x_i'); ylabel('y_i and Y(x)');
+xlabel('Energy [MeV]'); ylabel('R(E) [g/cm^{2}]');
 title(['\chi^2 = ',num2str(chisqr.two),'  N-M = ',num2str(N-M)]);
 fprintf('  y(x) = %g + %g x \n',a_fit.two(1),a_fit.two(2));
 %% NIST
@@ -84,5 +84,8 @@ fprintf('  y(x) = %g + %g x \n',a_fit.two(1),a_fit.two(2));
 startNist = 23;
 endNist = 30;
 plotOf.NIST=plot(Kinetic(startNist:endNist),...
-CSDA(startNist:endNist));
+CSDA(startNist:endNist),'r');
+legend([plotOf.OurFit,plotOf.NIST],...
+sprintf('R(E)=%g E^{%g}\n',10^(a_fit.two(1)),a_fit.two(2)),...
+'NIST');
 hold off;
