@@ -16,8 +16,8 @@ expData=[... % # of sheets, energy in (keV)
     4,501    ;
     5,470.5  ;
     7,413];
-y.plasOne=expData(:,2)';
-x.plasOne=expData(:,1)';
+y.plasOne=expData(:,2)'; % Energy in keV
+x.plasOne=expData(:,1)'; % plate numbers
 sigma.plasOne = [...
     6.5,
     6.5,
@@ -50,7 +50,7 @@ E.keV = y.plasOne; % in keV
 E.MeV = E.keV * 1e-3; % in MeV
 y.plasTwo = log10(R.plasticgcm2);
 x.plasTwo = log10(E.MeV);
-sigma.plasTwo = log10((sigma.plasOne*expData(:,1)./expData(:,2))');
+sigma.plasTwo = log10((sigma.plasOne*ones(length(expData(:,1)),1)./expData(:,2))');
 %% Print out statistics
 [a_fit.plasTwo, sig_a.plasTwo, yy.plasTwo, chisqr.plasTwo] = ...
     linreg(x.plasTwo,y.plasTwo,sigma.plasTwo);
@@ -126,7 +126,7 @@ E.keV = y.one; % in keV
 E.MeV = E.keV * 1e-3; % in MeV
 y.two = log10(R.gcm2);
 x.two = log10(E.MeV);
-sigma.two = log10((sigma.one*expData(:,1)./expData(:,2))');
+sigma.two = log10((sigma.one*ones(length(expData(:,1)),1)./expData(:,2))');
 %% Print out Statistics
 [a_fit.two, sig_a.two, yy.two, chisqr.two] = ...
     linreg(x.two,y.two,sigma.two);
@@ -197,7 +197,7 @@ set(gca, ...
     'YColor'      , [.3 .3 .3], ...
     'LineWidth'   , 1         );
 hold off;
-printTrueFalse=1;
+printTrueFalse=0;
 if printTrueFalse == 1
     set(gcf, 'PaperPositionMode', 'auto');
     figurePath = ['/Users/kevin/SkyDrive/KTH Work/Period 3'...
