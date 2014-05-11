@@ -48,18 +48,19 @@ R.centimeters = R.meters * 100; % in cm
 R.plasticgcm2 = R.centimeters * density.plastic; % in g/cm^2
 E.keV = y.plasOne; % in keV
 E.MeV = E.keV * 1e-3; % in MeV
-y.plasTwo = log10(R.plasticgcm2);
-x.plasTwo = log10(E.MeV);
-sigma.plasTwo = log10((sigma.plasOne*ones(length(expData(:,1)),1)./expData(:,2))');
+y.plasTwo = log(R.plasticgcm2);
+x.plasTwo = log(E.MeV);
+sigma.plasTwo = R.plasticgcm2*0.05./R.plasticgcm2;
 %% Print out statistics
 [a_fit.plasTwo, sig_a.plasTwo, yy.plasTwo, chisqr.plasTwo] = ...
     linreg(x.plasTwo,y.plasTwo,sigma.plasTwo);
 fprintf('Fit parameters:\n');
 fprintf(' b = %g +/- %g \n',a_fit.plasTwo(1),sig_a.plasTwo(1));
 fprintf(' m = %g +/- %g \n',a_fit.plasTwo(2),sig_a.plasTwo(2));
-fprintf('ln(k)=b and B=m \n');
+fprintf('log10(k)=b and B=m \n');
 fprintf(' R(E)=kE^B\n');
-fprintf('R(E)=%g E^(%g)\n',10^(a_fit.plasTwo(1)),a_fit.plasTwo(2));
+fprintf('R(E)=%g E^(%g)\n',exp(a_fit.plasTwo(1)),a_fit.plasTwo(2));
+fprintf(' B = %g +/- %g \n',a_fit.plasTwo(2),sig_a.plasTwo(2));
 %% * Graph the plastic data, with error bars, and fitting function.
 % plotOf.OurErrorBarsPlastic = errorbar(10.^x.plasTwo,...
 %     10.^y.plasTwo,sigma.plasTwo,'o'...
@@ -94,15 +95,16 @@ sigma.one = [...
     1.5,
     8.5,
     10.5]';
+dx_aluminum = sigma.one./(y.one); % dE/E
 [a_fit.one, sig_a.one, yy.one, chisqr.one] = ...
     linreg(x.one,y.one,sigma.one);
 M=2;
 N = length(x);
 % * Print out the fit parameters, including their error bars.
-fprintf('Fit parameters:\n');
-for i=1:M
-    fprintf(' a(%g) = %g +/- %g \n',i,a_fit.one(i),sig_a.one(i));
-end
+% fprintf('Fit parameters:\n');
+% for i=1:M
+%     fprintf(' a(%g) = %g +/- %g \n',i,a_fit.one(i),sig_a.one(i));
+% end
 % * Graph the data, with error bars, and fitting function.
 errorbar(x.one,y.one,sigma.one,'o'); % Graph data with error bars
 hold on;                  % Freeze the plot to add the fit
@@ -124,31 +126,31 @@ R.centimeters = R.meters * 100; % in cm
 R.gcm2 = R.centimeters * density.aluminum; % in g/cm^2
 E.keV = y.one; % in keV
 E.MeV = E.keV * 1e-3; % in MeV
-y.two = log10(R.gcm2);
-x.two = log10(E.MeV);
-sigma.two = log10((sigma.one*ones(length(expData(:,1)),1)./expData(:,2))');
+y.two = log(R.gcm2);
+x.two = log(E.MeV);
+sigma.two = dx_aluminum; %R.gcm2*0.05./R.gcm2;
 %% Print out Statistics
 [a_fit.two, sig_a.two, yy.two, chisqr.two] = ...
     linreg(x.two,y.two,sigma.two);
-fprintf('Fit parameters:\n');
-fprintf(' b = %g +/- %g \n',a_fit.two(1),sig_a.two(1));
-fprintf(' m = %g +/- %g \n',a_fit.two(2),sig_a.two(2));
-fprintf('ln(k)=b and B=m \n');
-fprintf(' R(E)=kE^B\n');
-fprintf('R(E)=%g E^(%g)\n',10^(a_fit.two(1)),a_fit.two(2));
+% fprintf('Fit parameters:\n');
+% fprintf(' b = %g +/- %g \n',a_fit.two(1),sig_a.two(1));
+% fprintf(' m = %g +/- %g \n',a_fit.two(2),sig_a.two(2));
+% fprintf('ln(k)=b and B=m \n');
+% fprintf(' R(E)=kE^B\n');
+% fprintf('R(E)=%g E^(%g)\n',10^(a_fit.two(1)),a_fit.two(2));
 %% * Graph the data, with error bars, and fitting function.
 % Bring figure 1 window forward
 figure('Units', 'pixels', ...
     'Position', [500 100 500 375]);
-plotOf.OurErrorBarsPlastic = errorbar(10.^x.plasTwo,...
-    10.^y.plasTwo,10.^sigma.plasTwo,'o'...
+plotOf.OurErrorBarsPlastic = errorbar(exp(x.plasTwo),...
+    exp(y.plasTwo),exp(sigma.plasTwo),'o'...
     ,'color','k');  % Graph data with error bars
 hold on;                  % Freeze the plot to add the fit
-plotOf.OurFitPlastic = plot(10.^x.plasTwo,10.^yy.plasTwo,'-'...
+plotOf.OurFitPlastic = plot(exp(x.plasTwo),exp(yy.plasTwo),'-'...
     ,'color','k');
-plotOf.OurErrorBarsAluminum = errorbar(10.^x.two,...
-    10.^y.two,10.^sigma.two,'o');  % Graph data with error bars
-plotOf.OurFitAluminum = plot(10.^x.two,10.^yy.two,'-');
+plotOf.OurErrorBarsAluminum = errorbar(exp(x.two),...
+    exp(y.two),exp(sigma.two),'o');  % Graph data with error bars
+plotOf.OurFitAluminum = plot(exp(x.two),exp(yy.two),'-');
 % Plot the fit on same graph as data
 hXLabel =  xlabel('Energy [MeV]'); hYLabel = ylabel('R(E) [g/cm^{2}]');
 hTitle = title(['\chi^2 = ',num2str(chisqr.two),'  N-M = ',num2str(N-M)]);
@@ -167,8 +169,8 @@ plotOf.Other = plot(Kinetic(startNist:endNist)...
 %% Plot features
 hLegend = legend([plotOf.OurFitAluminum,plotOf.OurFitPlastic,...
     plotOf.NIST,plotOf.Other],...
-    sprintf('R(E)=%g E^{%g}\n',10^(a_fit.two(1)),a_fit.two(2)),...
-    sprintf('R(E)=%g E^{%g}\n',10^(a_fit.plasTwo(1)),a_fit.plasTwo(2)),...
+    sprintf('R(E)=%g E^{%g}\n',exp(a_fit.two(1)),a_fit.two(2)),...
+    sprintf('R(E)=%g E^{%g}\n',exp(a_fit.plasTwo(1)),a_fit.plasTwo(2)),...
     'NIST','Other');
 set( gca                       , ...
     'FontName'   , 'Helvetica' );
@@ -204,3 +206,10 @@ if printTrueFalse == 1
         ' 2014/SH2008/Atomic Nucleus Revised/Figures/'];
     print('-depsc2',[figurePath sprintf('alum_plas_NIST_plot')])
 end
+%% Print out latest statistics
+fprintf('Aluminum:\n');
+fprintf(' k = %g +/- %g \n',exp(a_fit.two(1)),exp(sig_a.two(1)));
+fprintf(' B = %g +/- %g \n',a_fit.two(2),sig_a.two(2));
+fprintf('Plastic:\n');
+fprintf(' k = %g +/- %g \n',exp(a_fit.plasTwo(1)),exp(sig_a.plasTwo(1)));
+fprintf(' B = %g +/- %g \n',a_fit.plasTwo(2),sig_a.plasTwo(2));
