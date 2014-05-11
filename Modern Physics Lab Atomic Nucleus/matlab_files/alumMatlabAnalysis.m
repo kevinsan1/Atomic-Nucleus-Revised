@@ -33,10 +33,10 @@ range.plasticcentimeters = range.plasticmeters * 100; % in cm
 range.plasticgcm2 = range.plasticcentimeters * density.plastic; % in g/cm^2
 energy.plaskeV = y.plasOne; % in keV
 energy.plasMeV = energy.plaskeV * 1e-3; % in MeV
-y.plasTwo = log(range.plasticgcm2);
-dx.plastic = sigma.plasOne./y.plasOne;
-x.plasTwo = log(energy.plasMeV);
-sigma.plasTwo = dx.plastic; %R.plasticgcm2*0.05./R.plasticgcm2;
+y.plasTwo = log(range.plasticgcm2); % y = ln(R)
+dx.plastic = sigma.plasOne./y.plasOne; % dx = dE/E
+x.plasTwo = log(energy.plasMeV); % x = ln(E)
+sigma.plasTwo = y.plasTwo.*dx.plastic; % dy = dR/R = y*dx
 %% Chi-Fit
 [a_fit.plasTwo, sig_a.plasTwo, yy.plasTwo, chisqr.plasTwo] = ...
     linreg(x.plasTwo,y.plasTwo,sigma.plasTwo);
@@ -46,7 +46,7 @@ c.plastic = a_fit.plasTwo(1);
 dB.plastic = sig_a.plasTwo(2);
 k.plastic = exp(c.plastic);
 dy.plasRange = dc.plastic + B.plastic*dx.plastic...
-    + x.plasTwo*dB.plastic;
+    + x.plasTwo * dB.plastic;
 %% Print out statistics
 fprintf(' Plastic Fit parameters:\n');
 fprintf(' c = %g +/- %g \n',c.plastic,dc.plastic);
@@ -67,27 +67,8 @@ dx.aluminum = sigma.one./y.one; % dE/E
 [a_fit.one, sig_a.one, yy.one, chisqr.one] = ...
     linreg(x.one,y.one,sigma.one);
 m.aluminum=2;n.aluminum = length(x.one);
-% * Print out the fit parameters, including their error bars.
-% fprintf('Fit parameters:\n');
-% for i=1:M
-%     fprintf(' a(%g) = %g +/- %g \n',i,a_fit.one(i),sig_a.one(i));
-% end
-% * Graph the data, with error bars, and fitting function.
-% errorbar(x.one,y.one,sigma.one,'o'); % Graph data with error bars
-% hold on;                  % Freeze the plot to add the fit
-% plot(x.one,yy.one,'-');           % Plot the fit on same
-% graph as data
-% xlabel('x_i'); ylabel('y_i and Y(x)');
-% title(['\chi^2 = ',num2str(chisqr.one),'  N-M = ',num2str(N-M)]);
-% fprintf('  y(x) = %g + %g x \n',a_fit.one(1),a_fit.one(2));
-% Find Zero of y(x)
 zero.x = abs(a_fit.one(1)/a_fit.one(2)); % energy is zero when
-% x is _. x is in units of # of sheets of aluminum multiply
-% (# of sheets)
-% by sheet thickness to get total sheet thickness when it should
-% stop the electrons
 zero.thickness = zero.x * thick.Aluminum;
-% Define R(E) = kE^B
 range.alummeters = zero.thickness - x.one * thick.Aluminum; % in meters
 range.alumcentimeters = range.alummeters * 100; % in cm
 range.alumgcm2 = range.alumcentimeters * density.aluminum; % in g/cm^2
@@ -95,9 +76,7 @@ energy.alumkeV = y.one; % in keV
 energy.alumMeV = energy.alumkeV * 1e-3; % in MeV
 y.two = log(range.alumgcm2);
 x.two = log(energy.alumMeV);
-dy.alumRange = dc.aluminum + B.aluminum*dx.aluminum...
-    + x.two	*dB.aluminum; %R.gcm2*0.05./R.gcm2;
-sigma.two = dy.alumRange
+sigma.two = y.two.*dx.aluminum;
 %% Print out Statistics
 [a_fit.two, sig_a.two, yy.two, chisqr.two] = ...
     linreg(x.two,y.two,sigma.two);
@@ -105,6 +84,8 @@ dc.aluminum = sig_a.two(1);
 B.aluminum = a_fit.two(2);
 dB.aluminum = sig_a.two(2);
 k.aluminum = exp(a_fit.two(1));
+dy.alumRange = dc.aluminum + B.aluminum*dx.aluminum...
+    + x.two	*dB.aluminum; %R.gcm2*0.05./R.gcm2;
 % fprintf(' b = %g +/- %g \n',a_fit.two(1),dc.aluminum);
 % fprintf(' m = %g +/- %g \n',B.aluminum,dB.aluminum);
 % fprintf('ln(k)=b and B=m \n');
@@ -127,10 +108,66 @@ plotOf.OurErrorBarsAluminum = errorbar(energy.alumMeV,...
 plotOf.OurFitAluminum = plot(energy.alumMeV,exp(yy.two),'-');
 % Plot the fit on same graph as data
 hXLabel =  xlabel('Energy [MeV]'); hYLabel = ylabel('R(E) [g/cm^{2}]');
-hTitle = title(['\chi^2 = ',num2str(chisqr.plasTwo),'  N-M = ',...
-    num2str(n.plastic-m.plastic)]);
+hTitle = title(sprintf(...
+    '$\\chi^2 ($Al$) = %0.3g, \\chi^2 ($Pl$) = %0.3g$'...
+    ,chisqr.two, chisqr.plasTwo),...
+                'Interpreter','latex')
 fprintf('  y(x) = %g + %g x \n',a_fit.two(1),B.aluminum);
-otherSources(plotOf.OurErrorBarsAluminum,plotOf.OurFitPlastic,plotOf.OurErrorBarsPlastic,plotOf.OurFitAluminum,0);
+% otherSources(plotOf.OurErrorBarsAluminum,plotOf.OurFitPlastic,plotOf.OurErrorBarsPlastic,plotOf.OurFitAluminum,0,k.aluminum,B.aluminum,k.plastic,B.plastic);
+[kinetic,csda] = importNISTdataNow('edatacsda_Range.txt',6, 86);
+[kinetic2,csda2] = importNISTdataNow('plasticNISTData.txt',6, 86);
+nist.Range = 23:30;
+plotOf.NISTplastic = plot(kinetic2(nist.Range),csda2(nist.Range),'color','g');
+plotOf.NIST=plot(kinetic(nist.Range),...
+    csda(nist.Range),'color','r');
+%% Other Source
+nist.energy = kinetic;
+source.Other = .412*nist.energy.^(1.265 - ...
+    0.0954*log(nist.energy));
+plotOf.Other = plot(kinetic(nist.Range)...
+    ,source.Other(nist.Range),'m');
+%% Plot features
+hLegend = legend([plotOf.OurFitAluminum,plotOf.OurFitPlastic,...
+    plotOf.NIST,plotOf.NISTplastic,plotOf.Other],...
+    sprintf('R(E)=%0.3f E^{%0.4g}  (Aluminum)\n',k.aluminum,B.aluminum),...
+    sprintf('R(E)=%0.3f E^{%0.4g}  (Plastic)\n',k.plastic,B.plastic),...
+    'NIST (Aluminum)',...
+    'NIST (Plastic)',...
+    sprintf('R(E)=0.412 E^{1.265 - 0.0954*ln(E)}'),'location','best');
+set( gca                       , ...
+    'FontName'   , 'Helvetica' );
+set([hTitle, hXLabel], ...
+    'FontName'   , 'AvantGarde');
+set([ gca]             , ...
+    'FontSize'   , 8           );
+set([hXLabel, hYLabel,hLegend]  , ...
+    'FontSize'   , 10          );
+set( hTitle                    , ...
+    'FontSize'   , 12          , ...
+    'FontWeight' , 'bold'      );
+set([plotOf.OurFitAluminum,plotOf.OurFitPlastic,...
+    plotOf.NIST,plotOf.NISTplastic,plotOf.Other], ...
+    'LineWidth'       , 1.5          );
+set([plotOf.OurErrorBarsAluminum,plotOf.OurErrorBarsPlastic], ...
+    'LineWidth'       , 1.5          );
+set(gca, ...
+    'Box'         , 'off'     , ...
+    'TickDir'     , 'out'     , ...
+    'TickLength'  , [.02 .02] , ...
+    'XMinorTick'  , 'on'      , ...
+    'YMinorTick'  , 'on'      , ...
+    'YGrid'       , 'on'      , ...
+    'XColor'      , [.3 .3 .3], ...
+    'YColor'      , [.3 .3 .3], ...
+    'LineWidth'   , 1         );
+hold off;
+printTrueFalse=1;
+if printTrueFalse == 1
+    set(gcf, 'PaperPositionMode', 'auto');
+    figurePath = ['/Users/kevin/SkyDrive/KTH Work/Period 3'...
+        ' 2014/SH2008/Atomic Nucleus Revised/Figures/'];
+    print('-depsc2',[figurePath sprintf('alum_plas_NIST_plot')])
+end
 %% Print out latest statistics
 fprintf('\n')
 fprintf('Final Fit Parameters\n')
