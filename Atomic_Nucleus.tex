@@ -1,8 +1,10 @@
-\documentclass[12pt, a4paper]{article} % Paper size, default font size and one-sided paper
+\documentclass[a4paper]{article} % Paper size, default font size and one-sided paper
 
 % (fold)
+\usepackage{booktabs,amsmath,multirow} 
 \usepackage[svgnames]{xcolor}
-\usepackage{booktabs,amsmath}
+\usepackage{calc}
+\mathtoolsset{showonlyrefs} 
 \usepackage{fullpage}
 % \newcommand{\dpder}[3][]{\dfrac{\partial^{#1}#2}{\partial #3}} \addtolength{\oddsidemargin}{-.875in} \addtolength{\evensidemargin}{-.875in} \addtolength{\textwidth}{1.75in}
 % 
@@ -30,7 +32,6 @@
 \newcommand{\ig}{ 
 \includegraphics} 
 \newcommand{\tu}{\textup} \hypersetup{urlcolor=blue,colorlinks=true} 
-\usepackage{multirow}
 \usepackage[square, numbers, comma, sort&compress,super]{natbib}
 % Colors hyperlinks in blue - change to black if annoying
 % don't need the following. simply use defaults
@@ -53,9 +54,10 @@
 \input{Variables/kplastic.tex}
 \input{Variables/dkaluminum.tex}
 \input{Variables/dkplastic.tex}
-\def\MyWidth{\textwidth} % textwidth for multiple graphs
+\def\MyWidth{.8\textwidth} % textwidth for multiple graphs
 % Specifies the directory where pictures are stored
 % above is the preamble (end)
+
 \begin{document}
 \input{Sections/title_page_1.tex}
 %\affiliation{KTH Royal Institute of Technology, Electrotechnical Modelling} \email{kmead@kth.se

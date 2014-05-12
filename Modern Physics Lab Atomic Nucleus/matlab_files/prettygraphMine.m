@@ -25,7 +25,7 @@
 %% Create Basic Plot
 % First, I plot my data to create the crude visualization
 function prettygraphMine(xfit,yfit,xdata_m,ydata_m,ydata_s,b,m,chisqr,...
-    saveFigurePath,graphName)
+    saveFigurePath,graphName,material)
 figure('Units', 'pixels', ...
     'Position', [100 100 500 375]);
 hold on;
@@ -106,12 +106,13 @@ set(hE                            , ...
 %% Add Legend and Labels
 % No plot is complete unless it is well annotated.
 
-hTitle  = title(['Aluminum \chi^2 = ',num2str(chisqr),'    N-M = ',num2str(7-2)]);
+hTitle  = title([material sprintf(' $\\chi^2 = %0.3g$,     $N-M = 5$',chisqr)],...
+    'Interpreter','latex');
 hXLabel = xlabel('ln(E)'                     );
 hYLabel = ylabel('ln(R(E))'                      );
 
 hText   = text(xfit(4), yfit(5), ...
-  sprintf('\\it{y = %0.3g + %0.3g x}',b,m));
+  sprintf('\\it{y = %0.3f + %0.3f x}',b,m));
 
 hLegend = legend( ...
   [hE, hFit], ...

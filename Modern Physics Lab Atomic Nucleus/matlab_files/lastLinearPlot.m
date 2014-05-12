@@ -8,7 +8,7 @@ fprintf(' k = %0.3g +/- %0.3g \n',a_fitAluminum(1),sig_aAluminum(1));
 fprintf(' B = %0.3g +/- %0.3g \n',a_fitAluminum(2),sig_aAluminum(2));
 prettygraphMine(x.two,yyAluminum,x.two,y.two,dy.alumRange,...
     a_fitAluminum(1),a_fitAluminum(2),chisqrAluminum,figurePath,...
-    'linearAluminumGraph');
+    'linearAluminumGraph','Aluminum');
 %%
 % 		fig1=figure(1); clf;           % Bring figure 1 window forward
 % 		errorbar(x.two,y.two,dy.alumRange,'.');  % Graph data with error bars
@@ -33,9 +33,9 @@ fprintf('Fit parameters:\n');
 
 fprintf(' k = %0.3g +/- %0.3g \n',a_fitPlastic(1),sig_aPlastic(1));
 fprintf(' B = %0.3g +/- %0.3g \n',a_fitPlastic(2),sig_aPlastic(2));
-prettygraphMine(x.two,yyAluminum,x.two,y.two,dy.alumRange,...
-    a_fitAluminum(1),a_fitAluminum(2),chisqrAluminum,figurePath,...
-    'linearAluminumGraph');
+prettygraphMine(x.plasTwo,yyPlastic,x.plasTwo,y.plasTwo,dy.plasRange,...
+    a_fitPlastic(1),a_fitPlastic(2),chisqrPlastic,figurePath,...
+    'linearPlasticGraph','Plastic');
 %% 
 % 		figure(2); clf;           % Bring figure 1 window forward
 % 		errorbar(x.plasTwo,y.plasTwo,dy.plasRange,'.');  % Graph data with error bars

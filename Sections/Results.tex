@@ -5,13 +5,13 @@
 The peaks of each measurement was recorded in Table~\ref{tab:dataCollected} and Figure~\ref{fig:Figures_aluminumShiftsPlot} and \ref{fig:Figures_plasticShiftsPlot} show the energy distributions from both absorbers while collecting data from $^{137}\text{Cs}$.
 \begin{figure}[tbp]
 	\centering
-		\includegraphics[width=.9\textwidth]{Figures/aluminumShiftsPlot.eps}
+		\includegraphics[width=\MyWidth]{Figures/aluminumShiftsPlot.eps}
 	\caption{The peaks also shift towards lower energies for aluminum. In order to normalize their intensities, the data for sheets 4,5, and 6 have a constraint on the maximum number of counts collected.  The numbers 1-6 in the plot above and 1-5,7 in Figure~\ref{fig:Figures_plasticShiftsPlot} represent the number of sheets between the radioactive isotope and the scintillator.}
 	\label{fig:Figures_aluminumShiftsPlot}
 \end{figure}%(fig:Figures_aluminumShiftsPlot)
 \begin{figure}[tbp]
 	\centering
-		\includegraphics[width=.9\textwidth]{Figures/plasticShiftsPlot.eps}
+		\includegraphics[width=\MyWidth]{Figures/plasticShiftsPlot.eps}
 	\caption{The peak of $^{137}\text{Cs}$ shifts towards lower energies as more absorbers are added.  The system was programmed to run until a set number of counts were collected.  The sum of three spectrums shown above contain: the beta spectrum of max energy $1175.63~\text{keV}$ (5\%), the beta spectrum of max energy $513.93~\text{keV}$ (95\%), and the gaussian distribution with a center at $624.3~\text{keV}$ (10\%).}
 	\label{fig:Figures_plasticShiftsPlot}
 \end{figure}%(fig:Figures_plasticShiftsPlot)
@@ -39,7 +39,7 @@ n    & ($\text{peak}\pm\sigma$)~[keV] 	& Thickness (cm) & ($\text{peak}\pm\sigma
 	\caption{Data collected shows our estimated peaks with standard deviations from taking the average of two possible peaks, one low energy and one high energy.} \label{tab:dataCollected}
 \end{table}%(tab:dataCollected)
 The electron range, $R(E)$, is interpolated using a linear fit of thickness as a function of energy with the weights $1/\sigma^2$ from Table~\ref{tab:dataCollected}. We fit the function to the equation $R(E)=kE^B$, using a least squares fit.  We used a change of variables to transform our equation into a linear problem,
-\begin{align*}
+\begin{align}
 	\begin{matrix}
 		y = m x + c 	 						\\
 		\ln(R(E)) = y 	& 	\mathrm{d}y = \mathrm{d}R/R				\\
@@ -47,18 +47,19 @@ The electron range, $R(E)$, is interpolated using a linear fit of thickness as a
 		\ln(k) = c 		& 	\mathrm{d}c = \mathrm{d}k/k				\\
 		B = m 			& 	\mathrm{d}m = \mathrm{d}B				\\
 	\end{matrix}
-\end{align*}
+	\label{eq:transformationEquations}
+\end{align}
 
 
  Our chi-squared value for aluminum and plastic are $\chialuminum$ and $\chiplastic$, where $\text{N}-2 =5$.  For a good fit, we want $\chi^2\approx \text{N}-2$.  If $\chi^2 \gg \text{N}-2$, it suggests that we are either using the wrong function or our error bars are too small.  If $\chi^2 \ll \text{N}-2$, it suggests that the data fits so well that maybe our error bars are too large.\cite{garcia2000numerical}  We believe the function fit to our data sufficiently describes the range in this domain, but not outside of it.  
- The values for $k$ and $B$ of aluminium are obtained are: $k = \kaluminum \pm \dkaluminum$ and $B = \Baluminum \pm \dBaluminum$. The values for $k$ and $B$ of plastic are: $k = \kplastic \pm \dkplastic$ and $B = \Bplastic \pm \dBplastic$.  These error bars for aluminum and plastic are significantly too small, which also agrees with analysis of the chi-squared value.
+ The values for $k$ and $B$ of aluminium are obtained are: $k = \kaluminum \pm \dkaluminum$ and $B = \Baluminum \pm \dBaluminum$. The values for $k$ and $B$ of plastic are: $k = \kplastic \pm \dkplastic$ and $B = \Bplastic \pm \dBplastic$.  These error bars for aluminum are significantly too small, while the error bars for plastic are too large.  Figure~\ref{fig:Figures_linearAluminumGraph} and Figure~\ref{fig:Figures_linearPlasticGraph} give us a better view of the error bars because they plot $\ln(R(E)) vs \ln(E)$, with transformations given in Equation~\eqref{eq:transformationEquations} .
 
  $R(E)$ has units of g/cm$^2$, making the values independent of the absorbing material. Figure~\ref{fig:Figures_alum_plas_NIST_plot} shows our results compared to two other credible sources\cite{RevModPhys.24.28,nistData}, each with uncertainties around 5\%.  
 
 \begin{comment}
 	\begin{figure}[tbp]
 		\centering
-			\includegraphics[width=.8\textwidth]{Figures/R_E_Comparison.eps}
+			\includegraphics[width=\MyWidth]{Figures/R_E_Comparison.eps}
 		\caption{The data we collected agrees with those collected from different sources at higher energies and gets less accurate at lower energies.}
 		\label{fig:Figures_R_E_Comparison}
 	\end{figure}%fig:Figures_R_E_Comparison
@@ -74,9 +75,16 @@ The electron range, $R(E)$, is interpolated using a linear fit of thickness as a
 \begin{figure}[htbp]
   \centering
 \includegraphics[width=\MyWidth]{Figures/linearAluminumGraph.eps}
-  \caption{Graph of $\ln(R(E))$ vs $\ln(E)$}
+  \caption{Graph of aluminum data. $\ln(R(E))$ vs $\ln(E)$}
   \label{fig:Figures_linearAluminumGraph}
 \end{figure}%(fig:Figures_linearAluminumGraph)
+
+\begin{figure}[htbp]
+  \centering
+\includegraphics[width=\MyWidth]{Figures/linearPlasticGraph.eps}
+  \caption{Graph of plastic data. $\ln(R(E))$ vs $\ln(E)$}
+  \label{fig:Figures_linearPlasticGraph}
+\end{figure}%(fig:Figures_linearPlasticGraph)
 
 
 % section results (end)
