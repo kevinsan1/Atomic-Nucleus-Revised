@@ -126,7 +126,7 @@ for ii=1:15
     x.plasTwo = log(energy.plasMeV); % x = ln(E)
     sigma.plasTwo = dR.plastic; % dy = dR/R = y*dx
     [a_fit.plasTwo, sig_a.plasTwo, yy.plasTwo, chisqr.plasTwo] = ...
-        linreg(x.plasTwo,y.plasTwo,sigma.plasTwo);
+        linreg(x.plasTwo,y.plasTwo,dy.plasRange);
     dc.plastic = sig_a.plasTwo(1);
     B.plastic = a_fit.plasTwo(2);
     c.plastic = a_fit.plasTwo(1);
@@ -156,7 +156,7 @@ for ii=1:15
     x.two = log(energy.alumMeV);
     sigma.two = dR.aluminum;%y.two.*dx.aluminum;
     [a_fit.two, sig_a.two, yy.two, chisqr.two] = ...
-        linreg(x.two,y.two,sigma.two);
+        linreg(x.two,y.two,dy.alumRange);
     dc.aluminum = sig_a.two(1);
     B.aluminum = a_fit.two(2);
     dB.aluminum = sig_a.two(2);
@@ -265,6 +265,7 @@ fprintf(' k = %g +/- %g \n',k.plastic,k.plastic*dc.plastic);
 fprintf(' B = %g +/- %g \n',B.plastic,dB.plastic);
 fprintf(' Chi-squared: %g\n',chisqr.plasTwo);
 fprintf('         N-M: %g \n',n.plastic-m.plastic);
+save 'variablesForNextPlot.mat'
 dR.plastic= dR.plastic'*1e3;
 dR.aluminum = dR.aluminum'*1e3;
 %% variable path
