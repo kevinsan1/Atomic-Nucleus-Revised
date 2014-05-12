@@ -270,4 +270,6 @@ dR.aluminum = dR.aluminum'*1e3;
 %% variable path
 variablePath = ['/Users/kevin/SkyDrive/KTH Work', ...
     '/Period 3 2014/SH2008/Atomic Nucleus Revised/Variables/'];
+addpath(genpath(variablePath));
 makeTableLatex( dR.plastic,sigma.plasOne',dR.aluminum,sigma.one',[variablePath 'firstTableTry.tex'] )
+variableMaker(dB.aluminum,'dBaluminum',variablePath);
