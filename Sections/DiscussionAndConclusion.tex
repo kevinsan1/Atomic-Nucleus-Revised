@@ -4,16 +4,17 @@
 \section{Discussion/Conclusion}
 
 % (fold)
-\label{sec:discussion_conclusion} The relative intensities between each plot of Figure~\ref{fig:Figures_aluminumShiftsPlot} do not give as much insight as those in Figure~\ref{fig:Figures_plasticShiftsPlot} because the counts collected were not declared beforehand. We realised the necessity of this criteria and set it for all the collected data with plastic. The data we collected agrees within our calculated error of uncertainty for higher energies, but for lower energies, our model gets progressively worse. 
+\label{sec:discussion_conclusion} The relative intensities between each plot of Figure~\ref{fig:Figures_aluminumShiftsPlot} do not give as much insight as those in Figure~\ref{fig:Figures_plasticShiftsPlot} because the counts collected were not declared beforehand. We realised the necessity of this criteria and set it for all the collected data with plastic. The data we collected agrees within our calculated error of uncertainty for higher energies, but for lower energies, our model gets progressively worse. Although, Figure~\ref{fig:Figures_R_E_Error_ComparisonFull} is on a logarithmic scale, so the increasing deviation from the accepted values at lower energies would occur even if the error was constant throughout all measurements. 
 
 We do expect to have a larger deviation at lower energies because we assumed a linear model to simplify calculations. It is also evident from both sources that the relationship isn't exactly linear, but roughly follows this semi-empirical equation from Katz and Penfold,\cite{RevModPhys.24.28} 
 \begin{equation}
-	R(E) = 0.412 E^{1.265 - 0.0954 \ln(E)} 
-	\label{eq:acceptedEq} 
-\end{equation} %(eq:acceptedEq)
-Comparing this to our approximation, $R(E) = 0.449 E^{0.998}$ for aluminium and $0.370 E^{1.001}$ for plastic, we are satisfied with the results as they are good approximations.  It is good that the aluminum and plastic fitted equations agree with their NIST counterparts, even though the units for $R(E)$ is supposed to make it independent of the absorbing material. To calculate the errors, we used the equation,\cite{093570275X} $\delta R(E) = |k| \delta E$ and we know $\delta E$ from Table~\ref{tab:dataCollected}. Note that in this experiment, we assume that the uncertainty in the thickness of aluminium and plastic is negligible. 
+	R(E) = 412 E^{1.265 - 0.0954 \ln(E)} \label{eq:acceptedEq} 
+\end{equation}
 
-In both Equation~\eqref{eq:acceptedEq} and our approximation, $R(E)$ is in units of $[\frac{\text{g}}{\text{cm}^2}]$ and E is in $[\text{MeV}]$. The uncertainty of our data is shown in Table~\ref{tab:uncertaintyConversion}. Berger states the uncertainty in measurements increases for lower energies, 
+%(eq:acceptedEq)
+Comparing this to our approximation, $R(E) = 453.4 E$ for aluminium and $458.8 E$ for plastic, we are satisfied with the results as they are good approximations.   To calculate the errors, we used the equation,\cite{093570275X} $\delta R(E) = |k| \delta E$ and we know $\delta E$ from Table~\ref{tab:dataCollected}. Note that in this experiment, we assume that the uncertainty in the thickness of aluminium and plastic is negligible. 
+
+In both Equation~\eqref{eq:acceptedEq} and our approximation, $R(E)$ is in units of $[\frac{\text{mg}}{\text{cm}^2}]$ and E is in $[\text{MeV}]$. The uncertainty of our data is shown in Table~\ref{tab:uncertaintyConversion}. Berger states the uncertainty in measurements increases for lower energies, 
 \begin{equation}
 	\frac{\delta R(E)}{R(E)} = 
 	\begin{cases}
@@ -28,15 +29,15 @@ for the reason that at lower energies the electron energy is not large compared 
 			{llll} \toprule \multicolumn{2}{c}{Aluminum} & \multicolumn{2}{c}{Plastic}\\
 			\cmidrule(r){1-2} 
 			\cmidrule(r){3-4} 
-			$\delta R(E)$ [$\frac{\text{mg}}{\text{cm}^2}$] & $\delta E$ [keV] & $\delta R(E)$ [$\frac{\text{mg}}{\text{cm}^2}$] & $\delta E$ [keV]\\
+			$\delta R(E)$ [$\frac{\text{mg}}{\text{cm}^2}$] & $\delta E$ [MeV] & $\delta R(E)$ [$\frac{\text{mg}}{\text{cm}^2}$] & $\delta E$ [MeV]\\
 			\midrule 
-			2.92 	& 4.0	&-0.2	& 5.5				\\
-			2.50 	& 4.0	& 1.8 	& 5.5				\\
-			0.10 	& 1.5 	& 3.7 	& 5.5				\\
-			3.23 	& 7.5 	& 2.9 	& 6.5				\\
-		   -0.02 	& 1.5 	& 2.2	& 9.0				\\
-			2.70 	& 8.5 	& 1.9 	& 4.5				\\
-			3.27 	& 10.5 	& 2.0	& 13.0				\\
+			1.3764 & 0.003 	& 1.359 	& 0.003 				\\
+			2.9822 & 0.004 	& 2.9445 	& 0.0065				\\
+			2.5234 & 0.0015 & 2.4915 	& 0.0055				\\
+			2.9822 & 0.0075 & 2.9445 	& 0.0065				\\
+			4.1292 & 0.0015 & 4.077 	& 0.009					\\
+			2.0646 & 0.0085 & 2.0385 	& 0.0045				\\
+			5.9644 & 0.0105 & 5.889 	& 0.013					\\
 			\bottomrule 
 		\end{tabular}
 	\end{center}
