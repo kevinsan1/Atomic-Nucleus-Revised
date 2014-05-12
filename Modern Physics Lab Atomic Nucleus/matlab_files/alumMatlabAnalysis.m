@@ -100,9 +100,13 @@ chisqr.allsaved(1,1) = chisqr.plasTwo;
 chisqr.allsaved(2,1) = chisqr.two;
 %% * Graph the data, with error bars, and fitting function.
 % Bring figure 1 window forward
+% k.aluminum = 0.412;
+% k.plastic = 0.412;
+dRsample.alum(:,1) = dy.alumRange.*range.alumgcm2;
+dRsample.plas(:,1) = dy.plasRange.*range.plasticgcm2;
 for ii=1:15
-dR.plastic = k.plastic*sigma.plasOne*1e-3;
-dR.aluminum = k.aluminum*sigma.one*1e-3;
+dR.plastic = k.plastic*sigma.plasOne*1e-2;
+dR.aluminum = k.aluminum*sigma.one*1e-2;
 %% Plastic data
 density.plastic = 1.13; % g/cm^3
 thick.plastic = 0.0001; % thickness in meters
@@ -185,7 +189,10 @@ B.aluminum = a_fit.two(2);
 dB.aluminum = sig_a.two(2);
 k.aluminum = exp(a_fit.two(1));
 dy.alumRange = dc.aluminum + B.aluminum*dx.aluminum...
-    + x.two	*dB.aluminum; %R.gcm2*0.05./R.gcm2;
+    + x.two	*dB.aluminum;
+dRsample.alum(:,ii+1) = dy.alumRange.*range.alumgcm2;
+dRsample.plas(:,ii+1) = dy.plasRange.*range.plasticgcm2;
+%R.gcm2*0.05./R.gcm2;
 % fprintf(' b = %g +/- %g \n',a_fit.two(1),dc.aluminum);
 % fprintf(' m = %g +/- %g \n',B.aluminum,dB.aluminum);
 % fprintf('ln(k)=b and B=m \n');
@@ -217,8 +224,8 @@ hold on;                  % Freeze the plot to add the fit
 plotOf.OurFitPlastic = plot(energy.plasMeV,range.plasticgcm2,'-'...
     ,'color','k');
 plotOf.OurErrorBarsAluminum = errorbar(energy.alumMeV,...
-    range.alumgcm2,dR.aluminum,'.');  % Graph data with error bars
-plotOf.OurFitAluminum = plot(energy.alumMeV,exp(yy.two),'-');
+    exp(yy.two),dR.aluminum,'.');  % Graph data with error bars
+plotOf.OurFitAluminum = plot(energy.alumMeV,range.alumgcm2,'-');
 % Plot the fit on same graph as data
 hXLabel =  xlabel('Energy [MeV]'); hYLabel = ylabel('R(E) [g/cm^{2}]');
 hTitle = title(sprintf(...
