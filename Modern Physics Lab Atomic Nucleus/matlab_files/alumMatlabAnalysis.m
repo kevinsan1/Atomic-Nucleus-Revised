@@ -214,7 +214,7 @@ plotOf.Other = plot(kinetic(nist.Range)...
 hLegend = legend([plotOf.OurFitAluminum,plotOf.OurFitPlastic,...
     plotOf.NIST,plotOf.NISTplastic,plotOf.Other],...
     sprintf('R(E)=%0.3f E^{%0.3g}  (Aluminum)\n',k.aluminum,B.aluminum),...
-    sprintf('R(E)=%0.3f E^{%0.4g}  (Plastic)\n',k.plastic,B.plastic),...
+    sprintf('R(E)=%0.3f E^{%0.3g}  (Plastic)\n',k.plastic,B.plastic),...
     'NIST (Aluminum)',...
     'NIST (Plastic)',...
     sprintf('R(E)=0.412 E^{1.265 - 0.0954*ln(E)}  (Katz/Penfold)'),'location','best');
@@ -246,7 +246,7 @@ set(gca, ...
     'LineWidth'   , 1         );
 hold off;
 printTrueFalse=1;
-if printTrueFalse == 0
+if printTrueFalse == 1
     set(gcf, 'PaperPositionMode', 'auto');
     figurePath = ['/Users/kevin/SkyDrive/KTH Work/Period 3'...
         ' 2014/SH2008/Atomic Nucleus Revised/Figures/'];
@@ -270,6 +270,21 @@ dR.aluminum = dR.aluminum'*1e3;
 %% variable path
 variablePath = ['/Users/kevin/SkyDrive/KTH Work', ...
     '/Period 3 2014/SH2008/Atomic Nucleus Revised/Variables/'];
+figurePath = ['/Users/kevin/SkyDrive/KTH Work', ...
+    '/Period 3 2014/SH2008/Atomic Nucleus Revised/Figures/'];
 addpath(genpath(variablePath));
-makeTableLatex( dR.plastic,sigma.plasOne',dR.aluminum,sigma.one',[variablePath 'firstTableTry.tex'] )
-variableMaker(dB.aluminum,'dBaluminum',variablePath);
+makeTableLatex( dR.plastic,sigma.plasOne',dR.aluminum,sigma.one',[figurePath 'firstTableTry.tex'] );
+variableMaker(dB.aluminum,	'dBaluminum',variablePath,3);
+variableMaker(dB.plastic,	'dBplastic',variablePath,3);
+variableMaker(dR.aluminum,	'dRaluminum',variablePath,3);
+variableMaker(dR.plastic,	'dRplastic',variablePath,3);
+variableMaker(B.aluminum,	'Baluminum',variablePath,3);
+variableMaker(B.plastic,	'Bplastic',variablePath,3);
+variableMaker(k.aluminum,	'kaluminum',variablePath,3);
+variableMaker(k.plastic,	'kplastic',variablePath,3);
+variableMaker(k.aluminum*dc.aluminum,'dkaluminum',variablePath,3);
+variableMaker(k.plastic*dc.plastic,'dkplastic',variablePath,3);
+variableMaker(chisqr.plasTwo,	'chiplastic',variablePath,1);
+variableMaker(chisqr.two,	'chialuminum',variablePath,1);
+
+
