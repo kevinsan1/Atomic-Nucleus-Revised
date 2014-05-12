@@ -125,8 +125,6 @@ INPUT Figures/firstTableTry.tex
 INPUT Figures/firstTableTry.tex
 INPUT .Atomic_Nucleus.bbl
 INPUT .Atomic_Nucleus.bbl
-INPUT .Atomic_Nucleus.bbl
-INPUT .Atomic_Nucleus.bbl
 INPUT .Atomic_Nucleus.aux
 INPUT ./.Atomic_Nucleus.out
 INPUT ./.Atomic_Nucleus.out

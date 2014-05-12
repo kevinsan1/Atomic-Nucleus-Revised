@@ -1,14 +1,13 @@
 # Fdb version 3
-["bibtex Atomic_Nucleus"] 1399932601 "Atomic_Nucleus.aux" "Atomic_Nucleus.bbl" "Atomic_Nucleus" 1399933020
+["bibtex Atomic_Nucleus"] 1399933538 "Atomic_Nucleus.aux" "Atomic_Nucleus.bbl" "Atomic_Nucleus" 1399933540
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1222816716 59506 016987d9be15acf51cdd7252d40ecec2 ""
-  "Atomic_Nucleus.aux" 1399933019 7800 01073ce2ed0c71d509bf224479ecb7b8 ""
+  "Atomic_Nucleus.aux" 1399933539 7712 6a98823fbcaa84961d13b82314a68fda ""
   "Atomic_Nucleus.bcf" 0 -1 0 ""
   "Atomic_Nucleus.bib" 1397331037 3660 11b176a2cde9abce210946f238bc31c2 ""
-  "My_Book.bib" 0 -1 0 ""
   (generated)
   "Atomic_Nucleus.bbl"
   "Atomic_Nucleus.blg"
-["pdflatex"] 1399933018 "Atomic_Nucleus.tex" "Atomic_Nucleus.pdf" "Atomic_Nucleus" 1399933020
+["pdflatex"] 1399933538 "Atomic_Nucleus.tex" "Atomic_Nucleus.pdf" "Atomic_Nucleus" 1399933540
   "/usr/local/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -67,6 +66,7 @@
   "/usr/local/texlive/2013/texmf-dist/tex/latex/mh/mathtools.sty" 1363646010 49646 b5743d63698836f2fd3f3a741a7f7178 ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/mh/mhsetup.sty" 1336691608 5175 696879833890ce832e12746d98d0e932 ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/multirow/multirow.sty" 1137110401 7374 f7c1f13fc632dd5c9b220a247d233082 ""
+  "/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty" 1291685959 45456 1c8843383c0bd05870c45fa0ebea6cc2 ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/auxhook.sty" 1303254447 3834 707ef09f31d7d2ea47ba89974755dfe0 ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty" 1303254447 12029 04d7fdf76e0464c23b5aa3a727952d7c ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty" 1335995445 7075 bd0c34fbf1ae8fd1debd2a554e41b2d5 ""
@@ -85,11 +85,11 @@
   "/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1369923225 1072746 3ce1f23f203cb4a0015ca3c8411dee4a ""
   "/usr/local/texlive/2013/texmf-var/web2c/pdftex/pdflatex.fmt" 1369923264 3827029 ad4432546849f432c3154779662c76c8 ""
   "/usr/local/texlive/2013/texmf.cnf" 1369923207 577 cbc827f6294276973a1952e86e8ad73a ""
-  "Atomic_Nucleus.aux" 1399933019 7800 01073ce2ed0c71d509bf224479ecb7b8 ""
-  "Atomic_Nucleus.bbl" 1399932138 2417 2dd849a6e5641d69688e3a6a0749a137 "bibtex Atomic_Nucleus"
-  "Atomic_Nucleus.out" 1399933019 760 9cfe7de6e2b18e7db9255cde04562cf4 ""
-  "Atomic_Nucleus.tex" 1399932587 2591 da010f2b2235f29db5bf85e04954eaf3 ""
-  "Atomic_Nucleus.toc" 1399933019 416 fc902f9a63529ddd4f15be9b1f5779ca ""
+  "Atomic_Nucleus.aux" 1399933539 7712 6a98823fbcaa84961d13b82314a68fda ""
+  "Atomic_Nucleus.bbl" 1399933538 2417 2dd849a6e5641d69688e3a6a0749a137 "bibtex Atomic_Nucleus"
+  "Atomic_Nucleus.out" 1399933539 760 9cfe7de6e2b18e7db9255cde04562cf4 ""
+  "Atomic_Nucleus.tex" 1399933527 2571 4a3252e2f31d5c245e44c9079a7260ba ""
+  "Atomic_Nucleus.toc" 1399933539 416 fc902f9a63529ddd4f15be9b1f5779ca ""
   "Figures/137CsDecayScheme.png" 1397319028 2904 f7b390593e37fb081d66df7d1a64c5e5 ""
   "Figures/90SrDecay.png" 1397319028 2240 c4edf4aa7adb49372f7e28ff4007a8ca ""
   "Figures/90YDecay.png" 1397319028 3378 c6bdc19b4ee2d1ef59269a247e28aa69 ""
