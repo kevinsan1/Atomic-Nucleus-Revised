@@ -187,6 +187,8 @@ INPUT ./Figures/alum_plas_NIST_plot-eps-converted-to.pdf
 INPUT ./Figures/alum_plas_NIST_plot-eps-converted-to.pdf
 INPUT ./Sections/DiscussionAndConclusion.tex
 INPUT ./Sections/DiscussionAndConclusion.tex
+INPUT Variables/firstTableTry.tex
+INPUT Variables/firstTableTry.tex
 INPUT Atomic_Nucleus.bbl
 INPUT Atomic_Nucleus.bbl
 INPUT Atomic_Nucleus.aux
