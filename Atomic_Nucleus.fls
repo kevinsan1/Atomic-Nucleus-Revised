@@ -194,9 +194,6 @@ INPUT ./Figures/plasticShiftsPlot-eps-converted-to.pdf
 INPUT ./Figures/plasticShiftsPlot-eps-converted-to.pdf
 INPUT ./Figures/plasticShiftsPlot-eps-converted-to.pdf
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
-INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
-INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT Figures/alum_plas_NIST_plot.eps
 INPUT ./Figures/alum_plas_NIST_plot.eps
 INPUT ./Figures/alum_plas_NIST_plot.eps
@@ -247,4 +244,3 @@ INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
-INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb

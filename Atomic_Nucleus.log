@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 MAY 2014 00:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 MAY 2014 00:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -513,11 +513,11 @@ Package pdftex.def Info: Figures/plasticShiftsPlot-eps-converted-to.pdf used on
 (pdftex.def)             Requested size: 362.37569pt x 225.09395pt.
  [4] [5 <./Figures/aluminumShiftsPlot-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/alum_plas_NIST_plot.eps>
-(epstopdf)                    date: 2014-05-12 23:14:26
+(epstopdf)                    date: 2014-05-13 00:32:37
 (epstopdf)                    size: 150183 bytes
 (epstopdf)             Output file: <Figures/alum_plas_NIST_plot-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2014-05-12 23:21:33
+(epstopdf)                    date: 2014-05-13 00:32:39
 (epstopdf)                    size: 16024 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/alum_plas_NIST_plo
 t-eps-converted-to.pdf Figures/alum_plas_NIST_plot.eps>
@@ -586,11 +586,11 @@ Package rerunfilecheck Info: File `Atomic_Nucleus.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
  ) 
 Here is how much of TeX's memory you used:
- 10905 strings out of 493315
- 153718 string characters out of 6137904
- 244285 words of memory out of 5000000
- 14154 multiletter control sequences out of 15000+600000
- 8312 words of font info for 31 fonts, out of 8000000 for 9000
+ 10900 strings out of 493315
+ 153664 string characters out of 6137904
+ 244287 words of memory out of 5000000
+ 14151 multiletter control sequences out of 15000+600000
+ 7808 words of font info for 28 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  29i,14n,35p,1087b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -606,12 +606,11 @@ cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Atomic_Nucleus.pdf (11 pages, 474512 bytes).
+e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Atomic_Nucleus.pdf (11 pages, 465938 bytes).
 PDF statistics:
- 355 PDF objects out of 1000 (max. 8388607)
- 282 compressed objects within 3 object streams
+ 351 PDF objects out of 1000 (max. 8388607)
+ 279 compressed objects within 3 object streams
  47 named destinations out of 1000 (max. 500000)
  94 words of extra memory for PDF output out of 10000 (max. 10000000)
 

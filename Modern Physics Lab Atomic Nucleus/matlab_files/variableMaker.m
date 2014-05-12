@@ -6,7 +6,7 @@ FID = fopen([variablePath variableName '.tex'], 'w');
 % n=3;
 %%
 if n == 1
-    fprintf(FID, ['\\def\\' variableName sprintf('{%0.1f} \n',variableValue)]);
+    fprintf(FID, ['\\def\\' variableName sprintf('{%0.2f} \n',variableValue)]);
     fclose(FID);
 elseif n==3
     fprintf(FID, ['\\def\\' variableName sprintf('{%0.3f} \n',variableValue)]);
