@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex Atomic_Nucleus"] 1399826935 "Atomic_Nucleus.aux" "Atomic_Nucleus.bbl" "Atomic_Nucleus" 1399828323
+["bibtex Atomic_Nucleus"] 1399900333 "Atomic_Nucleus.aux" "Atomic_Nucleus.bbl" "Atomic_Nucleus" 1399900337
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1222816716 59506 016987d9be15acf51cdd7252d40ecec2 ""
-  "Atomic_Nucleus.aux" 1399828323 8137 0a440d5542703e6c110eac4fcd43d12e ""
+  "Atomic_Nucleus.aux" 1399900337 6990 023d38bfe26bce250f2f0df061e23539 ""
   "Atomic_Nucleus.bcf" 0 -1 0 ""
   "Atomic_Nucleus.bib" 1397331037 3660 11b176a2cde9abce210946f238bc31c2 ""
   (generated)
   "Atomic_Nucleus.bbl"
   "Atomic_Nucleus.blg"
-["pdflatex"] 1399828322 "Atomic_Nucleus.tex" "Atomic_Nucleus.pdf" "Atomic_Nucleus" 1399828323
+["pdflatex"] 1399900336 "Atomic_Nucleus.tex" "Atomic_Nucleus.pdf" "Atomic_Nucleus" 1399900337
   "/usr/local/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -84,20 +84,16 @@
   "/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1369923225 1072746 3ce1f23f203cb4a0015ca3c8411dee4a ""
   "/usr/local/texlive/2013/texmf-var/web2c/pdftex/pdflatex.fmt" 1369923264 3827029 ad4432546849f432c3154779662c76c8 ""
   "/usr/local/texlive/2013/texmf.cnf" 1369923207 577 cbc827f6294276973a1952e86e8ad73a ""
-  "Atomic_Nucleus.aux" 1399828323 8137 0a440d5542703e6c110eac4fcd43d12e ""
-  "Atomic_Nucleus.bbl" 1399826936 2417 2dd849a6e5641d69688e3a6a0749a137 "bibtex Atomic_Nucleus"
-  "Atomic_Nucleus.out" 1399828323 760 b362cfa3c0541b356abe7ba7e8d6e54b ""
+  "Atomic_Nucleus.aux" 1399900337 6990 023d38bfe26bce250f2f0df061e23539 ""
+  "Atomic_Nucleus.bbl" 1399900334 2417 2dd849a6e5641d69688e3a6a0749a137 "bibtex Atomic_Nucleus"
+  "Atomic_Nucleus.out" 1399900337 760 4726a91a40e0b10b068ad35a3ca21636 ""
   "Atomic_Nucleus.tex" 1399828313 2178 ae5089f1af6251a37ec1877399ad0e2a ""
-  "Atomic_Nucleus.toc" 1399828323 416 6f4dcaaad0997fa9c206ef2de11e778b ""
+  "Atomic_Nucleus.toc" 1399900337 416 7d54997e36aa094f1a46d0939eea163a ""
   "Figures/137CsDecayScheme.png" 1397319028 2904 f7b390593e37fb081d66df7d1a64c5e5 ""
   "Figures/90SrDecay.png" 1397319028 2240 c4edf4aa7adb49372f7e28ff4007a8ca ""
   "Figures/90YDecay.png" 1397319028 3378 c6bdc19b4ee2d1ef59269a247e28aa69 ""
-  "Figures/R_E_Error_ComparisonFull-eps-converted-to.pdf" 1397319028 14210 c3fdc87a18a7e19d850db66e9b010b61 ""
-  "Figures/R_E_Error_ComparisonFull.eps" 1397319028 181712 c1a531a5910b9a1d76a8be040a00de89 ""
-  "Figures/R_E_Error_ComparisonFullZoomIn-eps-converted-to.pdf" 1397319028 13067 0ba2a7d80f0e55286a1456815f0879ce ""
-  "Figures/R_E_Error_ComparisonFullZoomIn.eps" 1397319028 155903 f9a5640cf8b7a9eb6dbb0576b1062b50 ""
-  "Figures/alum_plas_NIST_plot-eps-converted-to.pdf" 1399828318 15557 71be8dcb7fadd1bc2488c6541e76911c ""
-  "Figures/alum_plas_NIST_plot.eps" 1399828305 150141 3b319ba171b80aa13abd549641c56d1d ""
+  "Figures/alum_plas_NIST_plot-eps-converted-to.pdf" 1399829226 15551 bcd16b55e9b2614969be16bc01dcbbbe ""
+  "Figures/alum_plas_NIST_plot.eps" 1399829224 150072 0f9ce2351cb808d8c3cd227dbb2319dc ""
   "Figures/aluminumShiftsPlot-eps-converted-to.pdf" 1397319028 113062 6e397c1496f66992f90717b89fcc25a0 ""
   "Figures/aluminumShiftsPlot.eps" 1397319028 452413 b2ced961970b20edf624acf011d0af54 ""
   "Figures/betabi210.pdf" 1397319028 17646 cf03f60b208b33d052a1ecf466ac5bfe ""
@@ -107,7 +103,7 @@
   "Sections/Experimental_Method.tex" 1399641910 1643 7866a4a525b7d58076f403680858c761 ""
   "Sections/Experimental_Setup.tex" 1399641910 1805 b8ff77cde7af7ab6fc0ae25ebd3121d1 ""
   "Sections/Introduction.tex" 1399641909 472 164bb0aa54b388e4c5f6b421faa46551 ""
-  "Sections/Results.tex" 1399660457 5638 ee546c99a7b47fd85d09554296885c05 ""
+  "Sections/Results.tex" 1399841684 4771 4051be93a390555ebfe0b88d79b6452e ""
   "Sections/Theory.tex" 1399641908 4871 2faf28175856886078ea20965c930249 ""
   "Sections/title_page_1.tex" 1399641907 3736 7a7a4732418eada574c768b9957130f1 ""
   (generated)

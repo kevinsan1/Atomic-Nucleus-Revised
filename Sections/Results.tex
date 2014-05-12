@@ -40,16 +40,20 @@ n    & ($\text{peak}\pm\sigma$)~[keV] 	& Thickness (cm) & ($\text{peak}\pm\sigma
 \end{table}%(tab:dataCollected)
 The electron range, $R(E)$, is interpolated using a linear fit of thickness as a function of energy with the weights $1/\sigma^2$ from Table~\ref{tab:dataCollected}. We fit the function to the equation $R(E)=kE^B$, using a least squares fit.  We used a change of variables to transform our equation into a linear problem,
 \begin{align*}
-	y = m x + c \\
-\ln(R(E)) = y \\
-\ln(E) = x \\
-\ln(k) = c \\
-B = m \\
+	\begin{matrix}
+		y = m x + c 	 						\\
+		\ln(R(E)) = y 	& 	\mathrm{d}y = \mathrm{d}R/R				\\
+		\ln(E) = x 		& 	\mathrm{d}x = \mathrm{d}E/E				\\
+		\ln(k) = c 		& 	\mathrm{d}c = \mathrm{d}k/k				\\
+		B = m 			& 	\mathrm{d}m = \mathrm{d}B				\\
+	\end{matrix}
 \end{align*}
 
- Our chi-squared value for aluminum and plastic are $15.5$ and $0.534$ where $\text{N}-2 =5$.  For a good fit, we want $\chi^2\approx \text{N}-2$.  If $\chi^2 \gg \text{N}-2$, it suggests that we are either using the wrong function or our error bars are too small.  If $\chi^2 \ll \text{N}-2$, it suggests that the data fits so well that maybe our error bars are too large.\cite{garcia2000numerical}  We believe the function fit to our data sufficiently describes the range in this domain, but not outside of it.  The values for $k$ and $B$ of aluminium are obtained are: $k = 0.449 \pm 0.009$ and $B = 0.998 \pm 0.033$.  The values for $k$ and $B$ of plastic are: $k = 0.370 \pm 0.014$ and $B = 1.001 \pm 0.065$.  These error bars are significantly too small, which also agrees with analysis of the chi-squared value.
 
- $R(E)$ has units of mg/cm$^2$, making the values independent of the absorbing material. Figure~\ref{fig:Figures_R_E_Error_ComparisonFull} shows our results compared to two other credible sources\cite{RevModPhys.24.28,nistData}, each with uncertainties around 5\%.  
+ Our chi-squared value for aluminum and plastic are $15.5$ and $0.534$ where $\text{N}-2 =5$.  For a good fit, we want $\chi^2\approx \text{N}-2$.  If $\chi^2 \gg \text{N}-2$, it suggests that we are either using the wrong function or our error bars are too small.  If $\chi^2 \ll \text{N}-2$, it suggests that the data fits so well that maybe our error bars are too large.\cite{garcia2000numerical}  We believe the function fit to our data sufficiently describes the range in this domain, but not outside of it.  
+ The values for $k$ and $B$ of aluminium are obtained are: $k = 0.449 \pm 0.009$ and $B = 0.998 \pm 0.033$.  The error bars for aluminum are tooThe values for $k$ and $B$ of plastic are: $k = 0.370 \pm 0.014$ and $B = 1.001 \pm 0.065$.  These error bars for aluminum are significantly too small, which also agrees with analysis of the chi-squared value. On the other hand, the error bars for plastic are probably too large as $\chi^2 \ll \text{N}-2$.
+
+ $R(E)$ has units of g/cm$^2$, making the values independent of the absorbing material. Figure~\ref{fig:Figures_alum_plas_NIST_plot} shows our results compared to two other credible sources\cite{RevModPhys.24.28,nistData}, each with uncertainties around 5\%.  
 
 \begin{comment}
 	\begin{figure}[tbp]
@@ -63,7 +67,7 @@ B = m \\
 \begin{figure}[htbp]
   \centering 
   \includegraphics[width=\MyWidth]{Figures/alum_plas_NIST_plot.eps}
-  \caption{Comparison of data from aluminum and plastic with accepted values.a}
+  \caption{Comparison of data from aluminum and plastic with accepted values.}
   \label{fig:Figures_alum_plas_NIST_plot}
 \end{figure}%(fig:Figures_alum_plas_NIST_plot)
 
