@@ -1,6 +1,6 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.2}
 \contentsline {section}{\numberline {2}Theory}{2}{section.3}
 \contentsline {section}{\numberline {3}Experimental Setup}{4}{section.8}
-\contentsline {section}{\numberline {4}Experimental Method}{4}{section.10}
+\contentsline {section}{\numberline {4}Experimental Method}{5}{section.10}
 \contentsline {section}{\numberline {5}Results}{5}{section.18}
-\contentsline {section}{\numberline {6}Discussion/Conclusion}{6}{section.26}
+\contentsline {section}{\numberline {6}Discussion/Conclusion}{7}{section.26}

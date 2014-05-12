@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=.Atomic_Nucleus 2014.5.13)  13 MAY 2014 00:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=.Atomic_Nucleus 2014.5.13)  13 MAY 2014 01:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -9,22 +9,22 @@ Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (./.Atomic_Nucleus.aux)
 \openout1 = `.Atomic_Nucleus.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count123
@@ -52,7 +52,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring ON on input line 58.
+Package hyperref Info: Link coloring ON on input line 59.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -60,9 +60,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count129
 )
-LaTeX Info: Redefining \ref on input line 58.
-LaTeX Info: Redefining \pageref on input line 58.
-LaTeX Info: Redefining \nameref on input line 58.
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+LaTeX Info: Redefining \nameref on input line 59.
 (./.Atomic_Nucleus.out) (./.Atomic_Nucleus.out)
 \@outlinefile=\write3
 \openout3 = `.Atomic_Nucleus.out'.
@@ -138,11 +138,11 @@ Package pdftex.def Info: Figures/plasticShiftsPlot-eps-converted-to.pdf used on
 [5] [6 <./Figures/aluminumShiftsPlot-eps-converted-to.pdf> <./Figures/plasticSh
 iftsPlot-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/alum_plas_NIST_plot.eps>
-(epstopdf)                    date: 2014-05-13 00:32:37
+(epstopdf)                    date: 2014-05-13 01:27:30
 (epstopdf)                    size: 150183 bytes
 (epstopdf)             Output file: <Figures/alum_plas_NIST_plot-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2014-05-13 00:32:39
+(epstopdf)                    date: 2014-05-13 01:27:33
 (epstopdf)                    size: 16024 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/alum_plas_NIST_plo
 t-eps-converted-to.pdf Figures/alum_plas_NIST_plot.eps>
@@ -202,24 +202,24 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) [9 <./Figures/linearPlasticGraph-eps-converted-to.pdf>] (./.Atomic_Nucleus.bb
 l)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
 [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
 (./.Atomic_Nucleus.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `.Atomic_Nucleus.out' has not changed.
 (rerunfilecheck)             Checksum: 9CFE7DE6E2B18E7DB9255CDE04562CF4;760.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 781 strings out of 483173
- 12971 string characters out of 5996802
- 244323 words of memory out of 5000000
- 14163 multiletter control sequences out of 15000+600000
+ 785 strings out of 483172
+ 13031 string characters out of 5996798
+ 244425 words of memory out of 5000000
+ 14167 multiletter control sequences out of 15000+600000
  10765 words of font info for 38 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 29i,14n,34p,1109b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,14n,34p,1109b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
@@ -231,10 +231,10 @@ cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
 /texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
 texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on .Atomic_Nucleus.pdf (11 pages, 426108 bytes).
+Output written on .Atomic_Nucleus.pdf (11 pages, 426239 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
- 272 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
+ 344 PDF objects out of 1000 (max. 8388607)
+ 274 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
  94 words of extra memory for PDF output out of 10000 (max. 10000000)
 
