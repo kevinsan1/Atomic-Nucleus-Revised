@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 MAY 2014 01:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 MAY 2014 13:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -514,12 +514,12 @@ Package pdftex.def Info: Figures/plasticShiftsPlot-eps-converted-to.pdf used on
  [5] [6 <./Figures/aluminumShiftsPlot-eps-converted-to.pdf> <./Figures/plasticS
 hiftsPlot-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/alum_plas_NIST_plot.eps>
-(epstopdf)                    date: 2014-05-13 01:26:08
+(epstopdf)                    date: 2014-05-13 13:11:23
 (epstopdf)                    size: 150183 bytes
 (epstopdf)             Output file: <Figures/alum_plas_NIST_plot-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2014-05-13 01:26:11
-(epstopdf)                    size: 16024 bytes
+(epstopdf)                    date: 2014-05-13 13:27:09
+(epstopdf)                    size: 15968 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/alum_plas_NIST_plo
 t-eps-converted-to.pdf Figures/alum_plas_NIST_plot.eps>
 (epstopdf)             \includegraphics on input line 70.
@@ -592,7 +592,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
 Here is how much of TeX's memory you used:
  10923 strings out of 493315
  153938 string characters out of 6137904
- 244420 words of memory out of 5000000
+ 244425 words of memory out of 5000000
  14167 multiletter control sequences out of 15000+600000
  10765 words of font info for 38 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -608,7 +608,7 @@ cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
 /texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
 texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Atomic_Nucleus.pdf (11 pages, 426233 bytes).
+Output written on Atomic_Nucleus.pdf (11 pages, 426184 bytes).
 PDF statistics:
  344 PDF objects out of 1000 (max. 8388607)
  274 compressed objects within 3 object streams
