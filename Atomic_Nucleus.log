@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 MAY 2014 13:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  16 MAY 2014 13:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -533,12 +533,12 @@ Package pdftex.def Info: Figures/alum_plas_NIST_plot-eps-converted-to.pdf used
 on input line 70.
 (pdftex.def)             Requested size: 362.37569pt x 295.09662pt.
 Package epstopdf Info: Source file: <Figures/linearAluminumGraph.eps>
-(epstopdf)                    date: 2014-05-12 23:51:45
-(epstopdf)                    size: 163882 bytes
+(epstopdf)                    date: 2014-05-16 13:33:52
+(epstopdf)                    size: 163704 bytes
 (epstopdf)             Output file: <Figures/linearAluminumGraph-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2014-05-12 23:51:47
-(epstopdf)                    size: 17579 bytes
+(epstopdf)                    date: 2014-05-16 13:35:39
+(epstopdf)                    size: 17496 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/linearAluminumGrap
 h-eps-converted-to.pdf Figures/linearAluminumGraph.eps>
 (epstopdf)             \includegraphics on input line 77.
@@ -552,12 +552,12 @@ Package pdftex.def Info: Figures/linearAluminumGraph-eps-converted-to.pdf used
 on input line 77.
 (pdftex.def)             Requested size: 362.37569pt x 292.97939pt.
 Package epstopdf Info: Source file: <Figures/linearPlasticGraph.eps>
-(epstopdf)                    date: 2014-05-12 23:51:46
-(epstopdf)                    size: 163503 bytes
+(epstopdf)                    date: 2014-05-16 13:33:53
+(epstopdf)                    size: 163325 bytes
 (epstopdf)             Output file: <Figures/linearPlasticGraph-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2014-05-12 23:51:48
-(epstopdf)                    size: 18034 bytes
+(epstopdf)                    date: 2014-05-16 13:35:41
+(epstopdf)                    size: 17953 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figures/linearPlasticGraph
 -eps-converted-to.pdf Figures/linearPlasticGraph.eps>
 (epstopdf)             \includegraphics on input line 84.
@@ -608,7 +608,7 @@ cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
 /texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
 texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Atomic_Nucleus.pdf (11 pages, 426184 bytes).
+Output written on Atomic_Nucleus.pdf (11 pages, 426038 bytes).
 PDF statistics:
  344 PDF objects out of 1000 (max. 8388607)
  274 compressed objects within 3 object streams

@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex Atomic_Nucleus"] 1399980425 "Atomic_Nucleus.aux" "Atomic_Nucleus.bbl" "Atomic_Nucleus" 1399980431
+["bibtex Atomic_Nucleus"] 1399980425 "Atomic_Nucleus.aux" "Atomic_Nucleus.bbl" "Atomic_Nucleus" 1400240143
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1222816716 59506 016987d9be15acf51cdd7252d40ecec2 ""
-  "Atomic_Nucleus.aux" 1399980430 8046 811d72c84fb2cb36e8ab98457e26e9af ""
+  "Atomic_Nucleus.aux" 1400240143 8046 811d72c84fb2cb36e8ab98457e26e9af ""
   "Atomic_Nucleus.bcf" 0 -1 0 ""
   "Atomic_Nucleus.bib" 1397331037 3660 11b176a2cde9abce210946f238bc31c2 ""
   (generated)
   "Atomic_Nucleus.bbl"
   "Atomic_Nucleus.blg"
-["pdflatex"] 1399980430 "Atomic_Nucleus.tex" "Atomic_Nucleus.pdf" "Atomic_Nucleus" 1399980431
+["pdflatex"] 1400240142 "Atomic_Nucleus.tex" "Atomic_Nucleus.pdf" "Atomic_Nucleus" 1400240143
   "/usr/local/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -87,11 +87,11 @@
   "/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1369923225 1072746 3ce1f23f203cb4a0015ca3c8411dee4a ""
   "/usr/local/texlive/2013/texmf-var/web2c/pdftex/pdflatex.fmt" 1369923264 3827029 ad4432546849f432c3154779662c76c8 ""
   "/usr/local/texlive/2013/texmf.cnf" 1369923207 577 cbc827f6294276973a1952e86e8ad73a ""
-  "Atomic_Nucleus.aux" 1399980430 8046 811d72c84fb2cb36e8ab98457e26e9af ""
+  "Atomic_Nucleus.aux" 1400240143 8046 811d72c84fb2cb36e8ab98457e26e9af ""
   "Atomic_Nucleus.bbl" 1399980426 2417 2dd849a6e5641d69688e3a6a0749a137 "bibtex Atomic_Nucleus"
-  "Atomic_Nucleus.out" 1399980430 760 9cfe7de6e2b18e7db9255cde04562cf4 ""
+  "Atomic_Nucleus.out" 1400240143 760 9cfe7de6e2b18e7db9255cde04562cf4 ""
   "Atomic_Nucleus.tex" 1399937168 2590 cb9042d98d7093e7307fd07f8fdef363 ""
-  "Atomic_Nucleus.toc" 1399980430 416 81a49eb5b96186b0b25ec50da4ebec1c ""
+  "Atomic_Nucleus.toc" 1400240143 416 81a49eb5b96186b0b25ec50da4ebec1c ""
   "Figures/137CsDecayScheme.png" 1397319028 2904 f7b390593e37fb081d66df7d1a64c5e5 ""
   "Figures/90SrDecay.png" 1397319028 2240 c4edf4aa7adb49372f7e28ff4007a8ca ""
   "Figures/90YDecay.png" 1397319028 3378 c6bdc19b4ee2d1ef59269a247e28aa69 ""
@@ -101,10 +101,10 @@
   "Figures/aluminumShiftsPlot.eps" 1397319028 452413 b2ced961970b20edf624acf011d0af54 ""
   "Figures/betabi210.pdf" 1397319028 17646 cf03f60b208b33d052a1ecf466ac5bfe ""
   "Figures/firstTableTry.tex" 1399979483 1191 d4a03aa52f0a2f489ff0801241a23a5b ""
-  "Figures/linearAluminumGraph-eps-converted-to.pdf" 1399931507 17579 01785aedcd718956dece7d17fa57f734 ""
-  "Figures/linearAluminumGraph.eps" 1399931505 163882 01906fa43449183db16943d3835da77a ""
-  "Figures/linearPlasticGraph-eps-converted-to.pdf" 1399931508 18034 371c0f443057ac552a21be437793fdc0 ""
-  "Figures/linearPlasticGraph.eps" 1399931506 163503 2a371133acd9037981bd6624de438a0f ""
+  "Figures/linearAluminumGraph-eps-converted-to.pdf" 1400240139 17496 8da82f282a891e6245414d5de7c76561 ""
+  "Figures/linearAluminumGraph.eps" 1400240032 163704 34ee5191e33bf0efea63f60f6bfc19a3 ""
+  "Figures/linearPlasticGraph-eps-converted-to.pdf" 1400240141 17953 a05fccba120b29140eb774c525c67760 ""
+  "Figures/linearPlasticGraph.eps" 1400240033 163325 33662eb83f178839dce2f6a52a5d31d0 ""
   "Figures/plasticShiftsPlot-eps-converted-to.pdf" 1397319028 110467 f12e1235e121d42177fcc92ba53bccbb ""
   "Figures/plasticShiftsPlot.eps" 1397319028 453652 b551c61afa03f505af895b6b06523291 ""
   "Sections/DiscussionAndConclusion.tex" 1399936504 3551 e111b0d0a2cd51c3932ab6b45e70260e ""
